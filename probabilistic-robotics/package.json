@@ -1,0 +1,23 @@
+{
+  "name": "probabilistic-robotics",
+  "version": "1.0.0",
+  "description": "Work related to the book Probabilistic Robotics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwatkins/probabilistic-robotics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwatkins/probabilistic-robotics/issues"
+  },
+  "homepage": "https://github.com/dwatkins/probabilistic-robotics#readme",
+  "dependencies": {
+    "mathjs": "^3.17.0",
+    "numericjs": "^1.2.6"
+  }
+}
