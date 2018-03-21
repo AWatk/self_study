@@ -1,0 +1,58 @@
+.. _machine-learning:
+
+Machine Learning
+================
+
+.. contents::
+   :depth: 2
+
+
+
+
+Application of support vector machines in detecting hand grasp gestures using a commercially off the shelf wireless myoelectric armband
+---------------------------------------------------------------------------------------------------------------------------------------
+
+:Authors:
+   Amirabdollahian, Farshid
+   Walters, Michael L.
+
+:DOI:
+   10.1109/ICORR.2017.8009231
+
+Notes
+^^^^^
+
+Details a way of using support vector machines to develop a classification of myoelectric waveforms into hand gestures.
+
+Makes use of the Thalmic Labs Myo armband.
+
+Very simple implementation using python svm library
+   
+Takeaways
+^^^^^^^^^
+
+Should be an easily replicable test for learning SVM and delving into myoelectric measurementa and controls
+
+
+Support VectorMachine-Based Classification Scheme forMyoelectric Control Applied to Upper Limb
+----
+
+:Authors:
+   Oskoei, M.a.
+   Hu, Huosheng
+
+:DOI:
+   10.1109/TBME.2008.919734
+
+Notes
+^^^^^
+
+A more detailed explanation of the svm techniques used by "Application of support vector machines in detecting hand grasp gestures using a commercially off the shelf wireless myoelectric armband"
+   
+Takeaways
+^^^^
+
+Reference for parameters and feature selection for svm classification of myoelectric signals
+
+
+

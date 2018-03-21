@@ -1,0 +1,374 @@
+.. _human-robot-interaction:
+
+Human-Robot Interaction
+=======================
+
+
+.. toctree::
+   :includehidden:
+   :maxdepth: 1
+   :glob:
+
+   intent-recognition
+   collaboration
+   affective-computing
+
+
+Patrick Carrington - The gest-rest family: Exploring Input Possibilities for Wheelchair Armrests
+------------------------------------------------------------------------------------------------
+:Authors:
+   Carrington, Patrick
+   Chang, Jian-Ming
+   Chang, Kevinn
+   Hornback, Catherine
+   Hurst, Amy
+   Kane, Shaun K.
+   
+:DOI:
+   10.1145/2873062
+
+Notes
+^^^^^
+
+**Chairables**
+
+First introduction to the concept of a chairable, a play on the "wearable" buzzword. A chairable is just anything designed to fit in the footprint of a wheelchair and is useful as an interface or aid.
+
+**Perception**
+
+Brings up the point that many custom accessibility solutions stand out and draw unwanted attention to the user, which causes them to default to generic commercial devices instead.
+
+**Gest Rest**
+
+Introduces the gest-rest, a input device on a powered wheelchair armrest that provides multiple modalities of intereaction, such as buttons, pressure sensitive regions, or gesture input.
+
+Devices made were momentary buttons, d-pads, pressure sensitive pads, and a touch screen, all integrated into the top-front of the armrest.
+
+Main gestures used:
+
+#. Tap (Single, Double, Triple)
+#. Holds (Short, Medium, Long)
+#. Flick
+#. Swipe
+#. Drag
+#. Lift/Roll/Rock/Squeeze/Punch
+
+A study was done to have wheelchair users rate the utility of these gestures. Both user and clinician feedback was noted on the design, applications, and improvements for the devices.
+
+Takeaways
+^^^^^^^^^
+
+Based on feedback, an interactive device should either be a wearable or located on the armrest of the chair. Otherwise it stands out, is inconvenient, and less usable.
+
+Take into account the perspective of therapists, who were shown to choose a solution based on its versatility vs personal convenience.
+
+Tapping on a force sensor is easier than tapping a button
+
+Using a touch screen is even easier since it requires the least amount of force to activate
+
+
+Patrick Carrington - Examining the Inaccessibility of Fitness Trackers for Wheelchair Athletes
+----------------------------------------------------------------------------------------------
+
+:Authors:
+   Carrington, Patrick
+   Chang, Kevin
+   Mentis, Helenna
+   Hurst, Amy
+
+:DOI:
+   10.1145/2700648.2809845
+
+Notes
+^^^^^
+
+Provdes a handy summarization of design considerations for a wheelchair specific fitness tracker.
+
+Addresses the issues with current technology being too able-bodied centric, with the common term for activity being "steps"
+
+
+Takeaways
+^^^^^^^^^
+
+To the user, a fitness track should just be a black box that spits out the desired performance metrics. Most users do not particularly care to see the raw data being observed.
+
+There is a need for recognition algorithms for wheelchair metrics and sports
+
+
+
+Patrick Carrington - How Power Wheelchair Users Choose Computing Devices
+------------------------------------------------------------------------
+
+:Authors:
+   Carrington, Patrick
+   Hurst, Amy
+   Kane, Shaun K
+
+:DOI:
+   10.1145/2513383.2513426
+
+Notes
+^^^^^
+
+A quick sumarization and interview/survey with users on factors affecting device use.
+
+Many users find custom multi-model solutions, such as a combination voice and keyboard text entry
+
+Takeaways
+^^^^^^^^^
+
+For mobility impaired individuals, finding a solution that accomodates for the strength and dexterity overrides any eaesthetics, function, or other personal preference.
+
+Storing/accessing is an issue. Always-on devices could alleviate this, or devices stored in easily accessible locations on a chair.
+
+Reaching/holding can be more difficult than movement based tracking
+
+
+Linda Fehr - Adequacy of power wheelchair control interfaces for persons with severe disabilities: A clinical survey
+--------------------------------------------------------------------------------------------------------------------
+
+:Authors:
+   Fehr, L
+   Langbein, W E
+   Skaar, S B
+
+:PMID:
+   10917267
+
+Notes
+^^^^^
+
+This details the results of a survey sent out to several clinical facilities asking about the usage of different control interfaces and their adequacy at meeting the patients needs.
+
+Argues for the inclusion of an autonomous layer in powered wheelchair control instead of the development of further interface designs
+
+Briefly references an autonomous wheelchair system called Computer Controlled Powered Wheelchair Navigation System (CPWNS)
+
+Takeaways
+^^^^^^^^^
+
+According to the survey, 80% of users user a joystick (More recent Permobil numbers say its more like 90%)
+
+A significant (but small) portion of users find that their current control scheme is not adequate to perfom tasks such as go through doors or avoid obstacles due to their disability
+   
+Richard C. Simpson - How many people would benefit from a smart wheelchair?
+---------------------------------------------------------------------------
+
+:Authors:
+   Simpson, Richard C.
+   LoPresti, Edmund F.
+   Cooper, Rory A.
+
+:DOI:
+   10.1682/JRRD.2007.01.0015
+
+Notes
+^^^^^
+
+Briefly describes different types of smart wheelchairs before detailing a great list of symptoms and their prevalence, then attemps to map the symptoms to the best form of smart chair
+
+Mentions the psychological impacts of reduced mobility
+
+Good listing of demographics that can benefit from:
+
+#. Autonomous Navigation
+#. Obstacle Avoidance
+#. Smart Manual Wheelchairs
+#. Smart Powered Wheelchars
+
+   
+Takeaways
+^^^^^^^^^
+
+Conceivably more would benefit from basic obstacle avoidance than full autonomous control
+
+More would also benefit from a powered wheelchair than a smart manual wheelchair
+
+
+Xi Chen - Robot assisted mobility for functional learning of children with special needs
+----------------------------------------------------------------------------------------
+
+:Authors:
+   X. Chen
+
+:PMID:
+   1318643374
+
+Notes
+^^^^^
+
+**Dessertation**
+
+Covers devices for functional motor learning in children.
+
+#. Force-feedback joystick using an assist-as-needed paradigm
+#. Artificial Potential fields for obstacle avoidance
+
+Study evaluates repelling vs assisting force for learning of line following.
+
+A self-localizing robotic training wheelchair was developed to conduct the studies.
+
+Provides details on training protocols and emotional/social interaction using robotic devices.
+
+**Smart Wheelchair and Novel Control Methods**
+
+Provides an overview of past smart wheelchairs from literature and the pros/cons.
+
+Most early smart wheelchairs such as the NavChair and TAO only used sonar to detect local obstacles and try to avoid them using methods borrowed from mobile robot ressearch.
+In these cases, the users are still responsible for any high level planning.
+
+Later chairs start to implement kalman filters and SLAM techniques to allow autonomous travel. SENARIO was one of the first to use lidar and global positioning to allow this.
+
+**Force Field**
+
+Virtual Wall
+ Restoring force applied normal to a virtual wall and inversely proportional to the distance from the wall
+
+Centering Effect
+ Specific to joystick feedback, a centering force that brings the joystick back to the center
+
+Damping Effect
+ Force opposite and proportional to velocity
+
+**Force Field Obstacle Avoidance**
+
+It initially seemed that this study was going to attach a repelling potential field to an obstacle, but in reality a free path is pre-determined and intermediary waypoints are assigned.
+The potential field is then based on these intermediary waypoints.
+
+**Social Interaction**
+
+Provides a great case study of implementing localization, tracking, obstacle detection, and path planning.
+
+Provides algorithms for sensor fusion, occupancy grid mapping, controller design
+
+Chair pose is predicted and checked for collision.
+
+
+Takeaways
+^^^^^^^^^
+
+Both attracting and repelling forces have their uses, but are context sensitive.
+
+
+Good list of references for papers involving:
+
+#. Early Smart Wheelchairs
+#. Sonar
+#. Dynamic obstacle avoidance
+#. Drive mode selection
+#. Outdoor Driving
+#. Estimation of Human Intention
+#. Mobility and interactiion promotion for special needs
+
+
+Derek McColl - A Survey of Autonomous Human Affect Detection Methods for Social Robots Engaged in Natural HRI
+-------------------------------------------------------------------------------------------------------------
+
+:Authors:
+   McColl, Derek
+   
+   Hong, Alexander
+
+   Hatakeyama, Naoaki
+
+   Nejat, Goldie
+
+   Benhabib, Beno
+
+:DOI:
+   10.1007/s10846-015-0259-2
+
+Notes
+^^^^^
+
+Provides a detailed overview and examples of types of affeect recognition in HRI.
+
+c
+Classfication of affect-detection in HRI scenarios:
+
+:Collaborative Tasks:
+    Humans and robots work together
+:Assistive Tasks:
+    Robots aid a human to complete a task
+:Mimicry Tasks:
+    Robots and humans perform the same behavior
+:Muti-purpose tasks:
+    Combination of many aspects
+
+Common modalities of affect detection:
+
+:Facial Expression:
+    Most common method of extracting facial information is using a 2D camera. Facial features are mainly extracted from eye, eyebrows, lips, and nose according to FACS. A drawback is that this kind of factial recognition only performs well when the user is positioned directly in front of the camera.
+:Body Language:
+    A Kinect was mostly used for identifying affect from body language. The most utilized features were the Kinect's skeleton joint positions.
+:Voice:
+    Affect from voice most commonly achevied using a microphone (duh) worn by the user, such as a lapel mic.
+:Physiological Signals:
+    Physiological measurements are most commonly done by ECG, EMG and/or skin conductance sensors in order to measure heart rate, facial muscle activity, and skin conductance levels.
+:Multi-modal techniques:
+
+Majority of affect-classification techniques incorporate some form of learning.
+
+Most common learning technique by modality:
+
+:Facial Expression:
+    Binary Decision Trees,
+    AdaBoost,
+    Multilayer Perceptrons,
+    Support Vector Machines,
+    Support Vector Regression,
+    Neural Networks,
+    Dynamic Bayesian Networks,
+:Body Language:
+    Support Vector Machines,
+    K Nearest Neighbor,
+:Voice:
+    Gaussian Mixture Model,
+    Support Vector Machines,
+    Naive Bayes,
+    Hidden Markov Models,
+:Physiological:
+    fuzzy models,
+    Hidden Markov Models,
+    Support Vector Machines,
+    Neural Networks
+:Multi-modal:
+    Support Vector Machines,
+    Hidden Markov Models,
+    Bayesian Network,
+    Neural Network,
+    Statistical Methods,
+
+Takeaways
+^^^^^^^^^
+
+Affect-detection has been used in the past for assistive/collaborative physical tasks such as robot-arm assisted lifting of an object. This could be viewed as a shared control problem and applied to the shared control of a mobile robot
+
+
+The effect of robotic wheelchair control paradigm and interface on user performance, effort and preference: An experimental assessment
+--------------------------------------------------------------------------------------------------------------------------------------
+
+:Authors:
+   Erdogan, Ahmetcan
+   Argall, Brenna D.
+
+:DOI:
+   10.1016/j.robot.2017.04.013
+
+Notes
+^^^^^
+
+Examines various wheelchair control paradigms, including manual, semi-autonomous, and autonomous control. Investigates techniques for sharing control between the user and an autonomous system.
+
+Found that no control paradigm came out as "best" and that it is very dependent on the end-user's preferences. Results show that what might be the most optimal according to typical metrics can defer from what is most accepted.
+
+Details shared control techniques and emphasises the partitioning of control spaces.
+
+Example of a Wizard of Oz study
+
+Provides an example of a modular wheelchair platform based on ROS.
+
+Takeaways
+^^^^^^^^^
+
+There needs to be a new layer between user input and the wheelchair in which the user's intent and needs are used to fuse their controls with an autonomous controller.

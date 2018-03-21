@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Machine Learning &mdash; Human-Centric Mobility  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href=".././_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="Human-Centric Mobility  documentation" href="../index.html"/>
+        <link rel="up" title="Literature Review Notes" href="../literature-review-notes.html"/>
+        <link rel="next" title="Preliminary Exam Prep" href="../prelims.html"/>
+        <link rel="prev" title="Dynamics and Controls" href="dynamics-and-controls.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Human-Centric Mobility
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../meeting-notes.html">Meeting Notes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../literature-review-notes.html">Literature Review Notes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="autonomy.html">Autonomy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="human-robot-interaction.html">Human-Robot Interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="human-factors.html">Human Factors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-and-controls.html">Dynamics and Controls</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Machine Learning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#application-of-support-vector-machines-in-detecting-hand-grasp-gestures-using-a-commercially-off-the-shelf-wireless-myoelectric-armband">Application of support vector machines in detecting hand grasp gestures using a commercially off the shelf wireless myoelectric armband</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#notes">Notes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#takeaways">Takeaways</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#support-vectormachine-based-classification-scheme-formyoelectric-control-applied-to-upper-limb">Support VectorMachine-Based Classification Scheme forMyoelectric Control Applied to Upper Limb</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Notes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Takeaways</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../prelims.html">Preliminary Exam Prep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../books-and-self-study.html">Books and Self-Study</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../research-progress-reports.html">Research Progress Reports</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Human-Centric Mobility</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../literature-review-notes.html">Literature Review Notes</a> &raquo;</li>
+        
+      <li>Machine Learning</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/lit-review/machine-learning.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="machine-learning">
+<span id="id1"></span><h1><a class="toc-backref" href="#id4">Machine Learning</a><a class="headerlink" href="#machine-learning" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#machine-learning" id="id4">Machine Learning</a><ul>
+<li><a class="reference internal" href="#application-of-support-vector-machines-in-detecting-hand-grasp-gestures-using-a-commercially-off-the-shelf-wireless-myoelectric-armband" id="id5">Application of support vector machines in detecting hand grasp gestures using a commercially off the shelf wireless myoelectric armband</a></li>
+<li><a class="reference internal" href="#support-vectormachine-based-classification-scheme-formyoelectric-control-applied-to-upper-limb" id="id6">Support VectorMachine-Based Classification Scheme forMyoelectric Control Applied to Upper Limb</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="application-of-support-vector-machines-in-detecting-hand-grasp-gestures-using-a-commercially-off-the-shelf-wireless-myoelectric-armband">
+<h2><a class="toc-backref" href="#id5">Application of support vector machines in detecting hand grasp gestures using a commercially off the shelf wireless myoelectric armband</a><a class="headerlink" href="#application-of-support-vector-machines-in-detecting-hand-grasp-gestures-using-a-commercially-off-the-shelf-wireless-myoelectric-armband" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body">Amirabdollahian, Farshid
+Walters, Michael L.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">DOI:</th><td class="field-body">10.1109/ICORR.2017.8009231</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="notes">
+<h3>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h3>
+<p>Details a way of using support vector machines to develop a classification of myoelectric waveforms into hand gestures.</p>
+<p>Makes use of the Thalmic Labs Myo armband.</p>
+<p>Very simple implementation using python svm library</p>
+</div>
+<div class="section" id="takeaways">
+<h3>Takeaways<a class="headerlink" href="#takeaways" title="Permalink to this headline">¶</a></h3>
+<p>Should be an easily replicable test for learning SVM and delving into myoelectric measurementa and controls</p>
+</div>
+</div>
+<div class="section" id="support-vectormachine-based-classification-scheme-formyoelectric-control-applied-to-upper-limb">
+<h2><a class="toc-backref" href="#id6">Support VectorMachine-Based Classification Scheme forMyoelectric Control Applied to Upper Limb</a><a class="headerlink" href="#support-vectormachine-based-classification-scheme-formyoelectric-control-applied-to-upper-limb" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body">Oskoei, M.a.
+Hu, Huosheng</td>
+</tr>
+<tr class="field-even field"><th class="field-name">DOI:</th><td class="field-body">10.1109/TBME.2008.919734</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id2">
+<h3>Notes<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>A more detailed explanation of the svm techniques used by &#8220;Application of support vector machines in detecting hand grasp gestures using a commercially off the shelf wireless myoelectric armband&#8221;</p>
+</div>
+<div class="section" id="id3">
+<h3>Takeaways<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Reference for parameters and feature selection for svm classification of myoelectric signals</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../prelims.html" class="btn btn-neutral float-right" title="Preliminary Exam Prep" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="dynamics-and-controls.html" class="btn btn-neutral" title="Dynamics and Controls" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Dexter Watkins.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-61341323-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>

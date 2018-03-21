@@ -1,0 +1,5 @@
+.. _slam:
+
+
+Simultaneous Localization and Mapping (SLAM)
+=============================================

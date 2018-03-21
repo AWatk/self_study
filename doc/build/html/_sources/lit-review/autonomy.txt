@@ -1,0 +1,13 @@
+.. _autonomy:
+
+Autonomy
+========
+
+.. toctree::
+   :includehidden:
+   :maxdepth: 1
+   :glob:
+
+   slam
+   obstacle-avoidance
+   path-planning

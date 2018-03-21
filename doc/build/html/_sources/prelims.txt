@@ -1,0 +1,7 @@
+.. _prelims:
+
+Preliminary Exam Prep
+====================
+
+.. note::
+   This will be the landing page for tracking and documenting prep work for the ME preliminary exam in August

@@ -1,0 +1,28 @@
+.. _literature-review-notes:
+
+Literature Review Notes
+=======================
+
+.. note::
+   This is the collection of my thoughts and summarizations of research papers.  The actual papers, with annotations, are tracked using Mendeley. This is meant to just be a quick, high level reference to the paper's content.
+
+   General Format:
+    * First Author - Title
+    * DOI
+    * Notes
+    * Takeaways
+
+
+.. toctree::
+   :includehidden:
+   :maxdepth: 1
+   :glob:
+
+   lit-review/autonomy
+   lit-review/human-robot-interaction
+   lit-review/human-factors
+   lit-review/dynamics-and-controls
+   lit-review/machine-learning
+      
+
+   

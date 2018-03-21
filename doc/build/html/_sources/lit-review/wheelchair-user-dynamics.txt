@@ -1,0 +1,98 @@
+.. _wheelchair-user-dynamics:
+
+Wheelchair-User Dynamics
+========================
+
+.. contents::
+   :depth: 2
+
+Ilya Kolmanovsky - Developments in Nonholonomic Control Problems
+----------------------------------------------------------------
+
+:Authors:
+   Kolmanovsky, Ilya
+   McClamroch, N. Harris
+
+:DOI:
+   10.1109/37.476384
+
+Notes
+^^^^^
+
+Published in 1995, gives a summarization of the state of the art at the time for control on nonholonomic systems.
+
+Nonholonmic Models are classified into **Kinematic Models** and **Dynamic Models**
+
+
+
+Takeaways
+^^^^^^^^^
+
+Review dynamics textbooks and reread to flesh out notes
+
+
+Richard M. Murray - Nonholonomic Motion Planning: Steering Using Sinusoids
+--------------------------------------------------------------------------
+
+:Authors:
+   Murray, Richard M.
+   Sastry, S. Shankar
+
+:DOI:
+   10.1109/9.277235
+
+Notes
+^^^^^
+
+Overview of nonholonomic planners.
+
+Mention of *compliant motion planning* for navigating in the presence of uncertainty
+
+
+Takeaways
+^^^^^^^^^
+
+Review dynamics textbooks and latombe's motion planning and reread to flesh out notes.
+
+
+
+Jonas Johansson - Torque Sensor Free Power Assisted Wheelchair
+--------------------------------------------------------------
+
+:Authors:
+   Johansson, Jonas
+   Petersson, Daniel
+   Holmberg, Ulf
+   Åstrand, Björn
+
+:DOI:
+   10.1109/ICORR.2007.4428421
+
+
+Notes
+^^^^^
+
+Master's Thesis in electrical engineering. Halmstad University
+
+Objective is to find a better, cheaper solution of push detection than force sensors in the rims of a wheelchair
+
+Uses velocity feedback for detecting pushes
+
+Controller is designed to be sensitive to distrubances instead of rejecting them.
+
+Uses a wheelchair model presented by Hori and Oh
+
+Starts with a velocity-as-push-detection model by Hori and Oh
+
+Details extracting pushes from velocity and the descretization of the model for this.
+
+Afterwards details two velocity disturbance observed controllers, *proportional* and *proportional-derivative*
+
+Then modifies a power wheelchair (hub based manual) to perform the push detection and push assist.
+
+
+Takeaways
+^^^^^^^^^
+
+Much of the work is based on a paper by Hori and Oh. Read it!
+
