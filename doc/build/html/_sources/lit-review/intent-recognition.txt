@@ -1,4 +1,0 @@
-.. _intent-recognition:
-
-Intent Recognition
-==================

@@ -1,4 +1,0 @@
-.. _perception-and-identity:
-
-Perception and Identity
-=======================

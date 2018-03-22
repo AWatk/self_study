@@ -1,7 +1,0 @@
-.. _projects:
-
-Projects
-========
-
-.. note::
-   This will be the landing page for linking to and summarizing various projects and their repos/io sites

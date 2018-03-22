@@ -1,6 +1,0 @@
-.. _dynamics-and-controls:
-
-Dynamics and Controls
-=====================
-
- 

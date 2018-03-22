@@ -1,4 +1,0 @@
-.. _obstacle-avoidance:
-
-Obstacle Avoidance
-==================

@@ -1,7 +1,0 @@
-.. _books-and-self-study:
-
-Books and Self-Study
-====================
-
-.. note::
-   This will be the landing page for notes and any work/repositories regarding various subjects or textbooks.

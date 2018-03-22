@@ -1,4 +1,0 @@
-.. _collaboration:
-
-Human-Robot Collaboration
-=========================

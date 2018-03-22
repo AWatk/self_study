@@ -1,7 +1,0 @@
-.. _research-progress-reports:
-
-Research Progress Reports
-=========================
-
-.. note::
-   This will be the landing page for any formal research progress reports presented to my advisor or committee
