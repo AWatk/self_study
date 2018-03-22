@@ -1,5 +1,5 @@
-project = 'Human-Centric Mobility'
-html_short_title = 'Research Notebook'
+project = 'Self Study'
+html_short_title = 'Workspace'
 copyright = '2018, Dexter Watkins'
 
 import os,inspect,sys
@@ -17,7 +17,7 @@ pygments_style = 'sphinx'
 import sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-htmlhelp_basename = 'Human-Centric Mobility'
+htmlhelp_basename = 'Self Study'
 html_static_path = ['_static']
 html_context = { 'css_files': ['./_static/custom.css'] }
 
@@ -28,11 +28,3 @@ show_authors = True
 
 spelling_word_list_filename = 'dictionary.txt'
 
-latex_elements = {}
-latex_elements['preamble'] = '\usepackage{amsmath}\n\usepackage{amssymb}\n'
-latex_elements['classoptions'] = ',openany,oneside'
-latex_elements['babel'] = '\\usepackage[english]{babel}'
-latex_elements['title'] = 'Research Progress Report'
-latex_elements['release'] = ''
-latex_elements['releasename'] = ''
-latex_elements['author'] = 'Dexter Watkins'
