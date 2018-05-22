@@ -25,11 +25,11 @@ Self Study
    :includehidden:
    :maxdepth: 1
 
-   probabilistic-robotics
-   nodejs-the-right-way
-   artificial-intelligence
-   modern-control-engineering           
-   principles-of-dynamics
+   probabilistic-robotics/probabilistic-robotics
+   nodejs-the-right-way/nodejs-the-right-way
+   artificial-intelligence/artificial-intelligence
+   modern-control-engineering/modern-control-engineering
+   principles-of-dynamics/principles-of-dynamics
 
               
     
