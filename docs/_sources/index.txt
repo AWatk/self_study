@@ -30,6 +30,7 @@ Self Study
    artificial-intelligence/artificial-intelligence
    modern-control-engineering/modern-control-engineering
    principles-of-dynamics/principles-of-dynamics
+   introduction-to-robotics/introduction-to-robotics
 
               
     
