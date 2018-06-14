@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Kinematics Of A Particle &mdash; Self Study  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href=".././_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="Self Study  documentation" href="../index.html"/>
+        <link rel="up" title="Principles of Dynamics" href="principles-of-dynamics.html"/>
+        <link rel="next" title="Dynamics Of A Particle" href="dynamics_of_a_particle.html"/>
+        <link rel="prev" title="Principles of Dynamics" href="principles-of-dynamics.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Self Study
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../probabilistic-robotics/probabilistic-robotics.html">Probabilistic Robotics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs-the-right-way/nodejs-the-right-way.html">Node.js the Right Way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../artificial-intelligence/artificial-intelligence.html">Artificial Intelligence: A Modern Approach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern-control-engineering/modern-control-engineering.html">Modern Control Engineering</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="principles-of-dynamics.html">Principles of Dynamics</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Kinematics Of A Particle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#position-velocity-and-acceleration-of-a-point">2.1 Position, Velocity, and Acceleration of a Point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#angular-velocity">2.2 Angular Velocity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rigid-body-motion-about-a-fixed-point">2.3 Rigid Body Motion about a Fixed Point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#time-derivation-of-a-unit-vector">2.4 Time Derivation of a Unit Vector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#velocities-and-acceleration-of-a-particle-in-several-coordinate-systems">2.5 Velocities and Acceleration of a Particle in Several Coordinate Systems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cartesian">Cartesian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cylindrical">Cylindrical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spherical">Spherical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tangential-and-normal-components">Tangential and Normal Components</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics_of_a_particle.html">Dynamics Of A Particle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction-to-robotics/introduction-to-robotics.html">Introduction to Robotics</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Self Study</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="principles-of-dynamics.html">Principles of Dynamics</a> &raquo;</li>
+        
+      <li>Kinematics Of A Particle</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/principles-of-dynamics/kinematics_of_a_particle.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="kinematics-of-a-particle">
+<span id="id1"></span><h1>Kinematics Of A Particle<a class="headerlink" href="#kinematics-of-a-particle" title="Permalink to this headline">¶</a></h1>
+<dl class="docutils">
+<dt>Kinematics</dt>
+<dd>The study of the motion of particles and rigid bodies,
+disregarding  the forces associated with these motions.</dd>
+<dt>Frame of Reference</dt>
+<dd>A Frame of reference must be specified to describe motion of a
+point. While inertial frames are preferred for dynamic
+analysis, in kinematics there are no preferred frames of
+reference.</dd>
+<dt>Relative To / With Respect To</dt>
+<dd>Means as viewed by an observer fixed in the referenced system
+and moving with it</dd>
+<dt>Referred To (a certain system)</dt>
+<dd>Means that the vector is expressed in terms of the unit
+vectors of that system</dd>
+</dl>
+<div class="section" id="position-velocity-and-acceleration-of-a-point">
+<h2>2.1 Position, Velocity, and Acceleration of a Point<a class="headerlink" href="#position-velocity-and-acceleration-of-a-point" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>Position</strong> of a point <strong>P</strong> relative to the <em>XYZ</em> reference frame
+is given by the vector <img class="math" src="../_images/math/7c345e599060f3e52c048d5c559a7f851bba7605.png" alt="\vec{r}"/> drawn from the origin <strong>O</strong> to <strong>P</strong>.</p>
+<p><strong>Velocity</strong> and <strong>Acceleration</strong> are then defined as:</p>
+<div class="math">
+<p><img src="../_images/math/d0cfb3cd025345da9579290c74cb573c2fb22dbe.png" alt="\vec{v}=\frac{d\vec{r}}{dt}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/a4dafe46fc1a38cc154c70731f14177aad5a4a51.png" alt="\vec{a}=\frac{d\vec{v}}{dt}=\frac{d^2\vec{r}}{dt^2}"/></p>
+</div><p>The general motion of a <strong>rigid body</strong> involves changes of
+<strong>orienctation</strong> as well as changes in <strong>location</strong></p>
+</div>
+<div class="section" id="angular-velocity">
+<h2>2.2 Angular Velocity<a class="headerlink" href="#angular-velocity" title="Permalink to this headline">¶</a></h2>
+<p>An infinitesimal displacement of all points in a rigid body can be
+considered as a translational displacement <img class="math" src="../_images/math/6819c4752fc0398ba39a95a4f0fd46dce779e9b3.png" alt="\Delta\vec{s}"/> plus a rotational
+displacement <img class="math" src="../_images/math/679ccb0c56ea685d7a9aaf621f3d0802823d4d52.png" alt="\Delta\vec{\omega}"/> about an axis through a base point fixed in
+the body.</p>
+<p><img class="math" src="../_images/math/679ccb0c56ea685d7a9aaf621f3d0802823d4d52.png" alt="\Delta\vec{\omega}"/> is a vector whose magnitude is equal to the angle of
+rotation and whose direction is along an axis determined by those
+points not displaced by the infinitesimal rotation.</p>
+<p><strong>Angular Velocity</strong> is then:</p>
+<div class="math">
+<p><img src="../_images/math/7ef30c8666897b7da9c7e4183448f91329716a80.png" alt="\vec{\omega}=\lim_{\Delta
+t\to\infty}\frac{\Delta\vec{\theta}}{\Delta t}"/></p>
+</div><p>Angular Velocity has no meaning for a point, only a body (three
+points, rigidly connected, not colinear)</p>
+</div>
+<div class="section" id="rigid-body-motion-about-a-fixed-point">
+<h2>2.3 Rigid Body Motion about a Fixed Point<a class="headerlink" href="#rigid-body-motion-about-a-fixed-point" title="Permalink to this headline">¶</a></h2>
+<p><em>Rotational motion relative to a given system does not rely on the
+choice of the base point.</em> Therefore, assume the base point is at the
+origin.</p>
+<p><em>TODO Image here</em></p>
+<p>In general, the rotation of <strong>P</strong> at any instant is taking place about
+an axis passing through the fixed base point. This axis is the
+<strong>instantaneous center of rotation</strong></p>
+<div class="math">
+<p><img src="../_images/math/0f3d8f848b97f06fe490c2c07a0d9968d651dc8c.png" alt="\dot{s}=\omega r\sin\theta"/></p>
+</div><p>The velocity of <strong>P</strong> along its path is of magnitude <img class="math" src="../_images/math/41ba96fb930bda2a1257f19dcde9b87947e3404e.png" alt="\dot{s}"/>
+and is directed along the tangent to the path.</p>
+<div class="math">
+<p><img src="../_images/math/a98c6b6a1993274d27cb825d37ab9dd5a5752b6d.png" alt="\vec{v}=\dot{\vec{s}}=\vec{\omega}\times\vec{r}"/></p>
+</div><p>Differentiating with respect to time gives</p>
+<div class="math">
+<p><img src="../_images/math/15d25f7c6c441d8b9c4eb14ad170a6fff58d3b41.png" alt="\frac{d\vec{v}}{dt}=\vec{a}=\vec{\omega}\times\dot{\vec{r}}+\dot{\vec{\omega}}\times\vec{r}"/></p>
+</div><p>and since <img class="math" src="../_images/math/3509727cc4807100fc5e9ce552eb282c5f42d085.png" alt="\dot{\vec{r}}=\vec{v}"/></p>
+<div class="math">
+<p><img src="../_images/math/ff64d00b49d3d554e17c32ca2ad8ce698dd3216c.png" alt="\vec{a}=\vec{\omega}\times(\vec{\omega}\times\vec{r})+\dot{\vec{\omega}}\times\vec{r}"/></p>
+</div><p>The first term <img class="math" src="../_images/math/e1c83ed399eb4586ec1ec0ebd59aa77946c9efe1.png" alt="\vec{\omega}\times(\vec{\omega}\times\vec{r})"/>
+is known as <strong>centripetal acceleration</strong> and the second term
+<img class="math" src="../_images/math/092fa128284db82d02e27803f7e98213b9e5aab8.png" alt="\dot{\vec{\omega}}\times\vec{r}"/> is <strong>tangential acceleration</strong></p>
+</div>
+<div class="section" id="time-derivation-of-a-unit-vector">
+<h2>2.4 Time Derivation of a Unit Vector<a class="headerlink" href="#time-derivation-of-a-unit-vector" title="Permalink to this headline">¶</a></h2>
+<p><em>TODO Image Here</em></p>
+<div class="math">
+<p><img src="../_images/math/b5909a2a879f7905e7e19aad30e953bef12a0ecb.png" alt="\dot{\vec{e_1}} = \vec{\omega}\times\vec{e_1}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/8a76a92525e4671f8d89ba305d29af19f5ba93eb.png" alt="\dot{\vec{e_2}} = \vec{\omega}\times\vec{e_2}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/52bcdf0e9ae59883a099bec4a28157aa92ef868a.png" alt="\dot{\vec{e_3}} = \vec{\omega}\times\vec{e_3}"/></p>
+</div><p>If <img class="math" src="../_images/math/6b0606d20f1b190557d472620b506692c5649574.png" alt="\vec{e_1}"/>, <img class="math" src="../_images/math/a8f49dfd7d58b2fd5fe4f969fbd572a4833f5fd5.png" alt="\vec{e_2}"/>, <img class="math" src="../_images/math/563a718bab216e167fedab861775e956a327807f.png" alt="\vec{e_3}"/> are orthogonal, <img class="math" src="../_images/math/772c5280c197188c615d5cee5036fe6c2a43560a.png" alt="\vec{\omega}"/> can be
+written</p>
+<div class="math">
+<p><img src="../_images/math/15a904ae5572ce07a2b95c9717bc984bbc0df990.png" alt="\vec{\omega}=\omega_1\vec{e_1} + \omega_2\vec{e_2} +
+\omega_3\vec{e_3}"/></p>
+</div><p>and</p>
+<div class="math">
+<p><img src="../_images/math/49d09b76eafc61605b942775533c8d923e9b7ec6.png" alt="\dot{\vec{e_1}}=\begin{vmatrix}
+\vec{e_1} &amp; \vec{e_2}  &amp; \vec{e_3} \\
+\omega_1 &amp; \omega_2 &amp; \omega_3 \\
+1 &amp; 0 &amp; 0
+\end{vmatrix}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/9dbaa47123ce8411c3fbfefef47767384b79da1b.png" alt="\dot{\vec{e_2}}=\begin{vmatrix}
+\vec{e_1} &amp; \vec{e_2}  &amp; \vec{e_3} \\
+\omega_1 &amp; \omega_2 &amp; \omega_3 \\
+0 &amp; 1 &amp; 0
+\end{vmatrix}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/9e635a42b3e77572eb0c7421fdf8e70bfeef4cae.png" alt="\dot{\vec{e_3}}=\begin{vmatrix}
+\vec{e_1} &amp; \vec{e_2}  &amp; \vec{e_3} \\
+\omega_1 &amp; \omega_2 &amp; \omega_3 \\
+0 &amp; 0 &amp; 1
+\end{vmatrix}"/></p>
+</div><p>Becoming more specific, if the basis vectors are equal to
+<img class="math" src="../_images/math/cfad96f17b60f90fc87c8750e920969fa45c3be4.png" alt="\hat{i},\hat{j},\hat{k}"/>, respectively, then</p>
+<div class="math">
+<p><img src="../_images/math/f76683e4d20a75ccb51620d9e9a3bde6ca04eb78.png" alt="\vec{\omega}=\omega_x\hat{i} + \omega_y\hat{j} + \omega_z\hat{k}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/c624922ad43ace1314d8113e61104ec417649cc9.png" alt="\dot{\hat{i}}=\vec{\omega}\times\hat{i}=\omega_z\hat{j}-\omega_y\hat{k}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/4e7df59ff426dac3322ac54da5850f11c60a96dc.png" alt="\dot{\hat{j}}=\vec{\omega}\times\hat{j}=\omega_x\hat{k}-\omega_z\hat{i}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/782e68b43182313e068677bb8f98509149a7393c.png" alt="\dot{\hat{k}}=\vec{\omega}\times\hat{k}=\omega_y\hat{i}-\omega_x\hat{j}"/></p>
+</div><p>It can be seen in each case the time derivative of a unit vector lies
+in a plane perpendicular to the vector, in accordance with the
+defintion of a cross product. <em>Note that in each case, the rate of
+change of a unit vector is calculated with respect to a fixed
+coordinate system but is expressed in terms of the unit vectors of the
+moving system.</em></p>
+</div>
+<div class="section" id="velocities-and-acceleration-of-a-particle-in-several-coordinate-systems">
+<h2>2.5 Velocities and Acceleration of a Particle in Several Coordinate Systems<a class="headerlink" href="#velocities-and-acceleration-of-a-particle-in-several-coordinate-systems" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cartesian">
+<h3>Cartesian<a class="headerlink" href="#cartesian" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Position</dt>
+<dd><div class="first last math">
+<p><img src="../_images/math/25bdea260f723b1fc25331ddf7a5574e0156415e.png" alt="\vec{r}=x\hat{i}+y\hat{j}+z\hat{k}"/></p>
+</div></dd>
+<dt>Velocity</dt>
+<dd><div class="first last math">
+<p><img src="../_images/math/e22c083dd43ac1f4c88052700310c53ec4efc05b.png" alt="\vec{v}=\dot{\vec{r}}=\dot{x}\hat{i}+\dot{y}\hat{j}+\dot{z}\hat{k}"/></p>
+</div></dd>
+<dt>Acceleration</dt>
+<dd><div class="first last math">
+<p><img src="../_images/math/ef350f148bd33078b37ad98be2abe753a637f7c3.png" alt="\vec{a}=\ddot{x}\hat{i}+\ddot{y}\hat{j}+\ddot{z}\hat{k}"/></p>
+</div></dd>
+</dl>
+</div>
+<div class="section" id="cylindrical">
+<h3>Cylindrical<a class="headerlink" href="#cylindrical" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Position</dt>
+<dd><div class="first last math">
+<p><img src="../_images/math/95578dc2ce81f15de196cfd009f25163ce5b1c8b.png" alt="\vec{r}=r\vec{e_r}+z\vec{e_z}"/></p>
+</div></dd>
+<dt>Velocity</dt>
+<dd><div class="first last math">
+<p><img src="../_images/math/269c0b92ef9f82292cf1293958a721ae3dcd5d3f.png" alt="\vec{v}=\dot{r}\vec{e_r}+\dot{z}\vec{e_z}+r\dot{\vec{e_r}}+z\dot{\vec{e_z}}"/></p>
+</div></dd>
+<dt>Acceleration</dt>
+<dd><div class="first last math">
+<p><img src="../_images/math/41611b12703cc9b0d95b42893685daba863109d0.png" alt="\vec{a}=(\ddot{r}-r\phi^2)\vec{e_r}+(r\ddot{\phi}+2\dot{r}\dot{\phi})\vec{e_{\phi}}+\ddot{z}\vec{e_z}"/></p>
+</div></dd>
+</dl>
+</div>
+<div class="section" id="spherical">
+<h3>Spherical<a class="headerlink" href="#spherical" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Position</dt>
+<dd><div class="first last math">
+<p><img src="../_images/math/e6020becbda1aa0ec023bb2e2ad091370dbe92a1.png" alt="\vec{r}=r\vec{e_r}"/></p>
+</div></dd>
+<dt>Velocity</dt>
+<dd><div class="first last math">
+<p><img src="../_images/math/02b755055fd43e7ed846d61b2f0610ac3909f37b.png" alt="\vec{v}=\dot{r}\vec{e_r}+r\dot{\vec{e_r}}"/></p>
+</div></dd>
+<dt>Acceleration</dt>
+<dd><div class="first last math">
+<p><img src="../_images/math/a89fe6c11ee62ef95ece34a6b8653596c20cc777.png" alt="\vec{a}=&amp;(\ddot{r}-r\dot{\theta}^2-r\dot{\phi}^2\sin^2\theta)\vec{e_r}\\+&amp;(r\ddot{\theta}+2\dot{r}\dot{\theta}-r\dot{\phi}^2\sin\theta\cos\theta)\vec{e_{\theta}}\\+&amp;(r\ddot{\phi}\sin\theta+2\dot{r}\dot{\theta}\sin\theta+2r\dot{\theta}\dot{\phi}\cos\theta)\vec{e_{\phi}}"/></p>
+</div></dd>
+</dl>
+</div>
+<div class="section" id="tangential-and-normal-components">
+<h3>Tangential and Normal Components<a class="headerlink" href="#tangential-and-normal-components" title="Permalink to this headline">¶</a></h3>
+<p>The velocity and acceleration of a point <strong>P</strong> as it moves on a curved
+path in space may be expressed in terms of <strong>tangential</strong> and
+<strong>normal</strong> components.</p>
+<div class="math">
+<p><img src="../_images/math/67c9b6491e48f2cef5437904daa58f4a2a0d9a78.png" alt="d\vec{r}=ds\vec{e_t}"/></p>
+</div><p>where <img class="math" src="../_images/math/375dc03548d78005cc317f0fae3c1b73097309ae.png" alt="\vec{e_t}"/> is a unit vector that is tangent to the path
+of <strong>P</strong> and points in the direction of increasing <strong>s</strong></p>
+<dl class="docutils">
+<dt>Velocity</dt>
+<dd><div class="first last math">
+<p><img src="../_images/math/412e1aed598fe8bfd6f46a5066db576e4fe6110e.png" alt="\vec{v}=\dot{s}\frac{d\vec{r}}{ds}=\dot{s}\vec{e_t}"/></p>
+</div></dd>
+<dt>Acceleration</dt>
+<dd><div class="first last math">
+<p><img src="../_images/math/5aac2d4ef2edfba831b85e9e984312d4997cd664.png" alt="\vec{a}=\ddot{s}\vec{e_t}+\frac{\dot{s}^2}{\rho}\vec{e_n}"/></p>
+</div></dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dynamics_of_a_particle.html" class="btn btn-neutral float-right" title="Dynamics Of A Particle" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="principles-of-dynamics.html" class="btn btn-neutral" title="Principles of Dynamics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Dexter Watkins.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-61341323-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>
