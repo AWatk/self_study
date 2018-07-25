@@ -1,2 +1,2 @@
-Node.js the Right Way
+Node.js 8 the Right Way
 =====================
