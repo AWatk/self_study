@@ -18,6 +18,7 @@ Self Study
    * Artificial Intelligence: A Modern Approach - Russell
    * Deep Learning - Goodfellow
    * Node.js the Right Way - Wilson
+   * Node.js 8 the Righ Way - Wilson
    * Modern Control Engineering - Ogata
    * Principles of Dynamics - Greenwood
      
@@ -26,7 +27,7 @@ Self Study
    :maxdepth: 1
 
    probabilistic-robotics/probabilistic-robotics
-   nodejs-the-right-way/nodejs-the-right-way
+   nodejs8-the-right-way/nodejs-the-right-way
    artificial-intelligence/artificial-intelligence
    modern-control-engineering/modern-control-engineering
    principles-of-dynamics/principles-of-dynamics
